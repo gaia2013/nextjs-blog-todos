@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import { getAllPostsData } from "./lib/posts";
+import { getAllPostsData } from "../lib/posts";
 import Post from "../components/Post";
 
 export default function BlogPage({ filteredPosts }) {
@@ -35,5 +35,6 @@ export async function getStaticProps() {
   const filteredPosts = await getAllPostsData();
   return {
     props: { filteredPosts },
+  revalidate: 3,
   };
 }
