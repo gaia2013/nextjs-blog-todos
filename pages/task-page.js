@@ -33,7 +33,7 @@ export default function TaskPage({ staticfilteredTasks }) {
         <Link href="/main-page">
           <div className="flex cursor-pointer mt-12">
             <svg
-              class="w-6 h-6 mr-3"
+              className="w-6 h-6 mr-3"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
